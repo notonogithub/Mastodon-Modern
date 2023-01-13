@@ -1,4 +1,4 @@
-# Mastodon Modern
+# Mastodon Modern  <a href="https://nogithub.codeberg.page"><img src="https://nogithub.codeberg.page/badge.svg" alt="Please don't upload to GitHub"></a>
 A UserStyle & theme that drastically improves the look & feel of Mastodon. Can be used with other themes that only change colors.
 
 | ![](images/modern-thumbnail.webp)  | ![](images/new-modern-light-theme-post.png) | ![](images/new-modern-multicolumn-dark.png) |
