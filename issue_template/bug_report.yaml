@@ -27,6 +27,6 @@ body:
           required: true
         - label: I have made sure I am on the latest version of my Browser.
           required: true
-        - label: I have made sure the server I am using the style on doesn't have any other major modifications
+        - label: I have made sure the server I am using the style on doesn't have any other major modifications.
           required: true
         - label: If installed as UserStyle, I am using the [Stylus](https://add0n.com/stylus.html) browser extension, not "Stylish".
