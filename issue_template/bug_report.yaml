@@ -20,8 +20,8 @@ body:
 
   - type: checkboxes
     id: a
-    label: Some checks
     attributes:
+      label: Some checks
       options:
         - label: I have made sure this issue hasn't already been posted.
           required: true
