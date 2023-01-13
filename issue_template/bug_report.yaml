@@ -20,6 +20,7 @@ body:
 
   - type: checkboxes
     id: a
+    label: Some checks
     attributes:
       options:
         - label: I have made sure this issue hasn't already been posted.
