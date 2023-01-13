@@ -1,0 +1,28 @@
+name: Bug Report
+labels:
+- bug
+
+body:
+
+  - type: textarea
+    id: describe
+    attributes:
+      label: Describe the issue
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser + Version
+      placeholder: ex: Firefox 108.0.2
+
+  - type: checkboxes
+    id: a
+    attributes:
+      options:
+        - label: I have made sure this issue hasn't already been posted.
+          required: true
+        - label: I have made sure I am on the latest version of my Browser.
+          required: true
+        - label: If installed as UserStyle, I am using the [Stylus](https://add0n.com/stylus.html) browser extension, not "Stylish".
