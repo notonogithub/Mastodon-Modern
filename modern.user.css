@@ -35,11 +35,13 @@
 *//*  1.5.2
 - Polishing things up
 - Restyled 'show more' button
+*//* 1.5.4
+- Fixed popup player showing behind some elements
 */
 
 /* ==UserStyle==
 @name           Mastodon Modern
-@version        1.5.3
+@version        1.5.4
 @description    Drastically improves the look & feel of Mastodon
 @updateURL      https://codeberg.org/Freeplay/Mastodon-Modern/raw/branch/main/modern.user.css
 @homepageURL    https://codeberg.org/Freeplay/Mastodon-Modern
@@ -51,7 +53,7 @@
 @author         Freeplay (https://freeplay.codeberg.page/)
 ==/UserStyle== */
 	 
-@-moz-document domain("mastodon.coffee"), domain("socel.net"), domain("brands.town"), domain("mstdn.social"), domain("social.vivaldi.net"), domain("masto.ai"), domain("mastodon.art"), domain("tech.lgbt"), domain("mastodon.social"), domain("mastodon.online"), domain("mastodon.lol"), domain("floss.social"), domain("mas.to"), domain("c.im"), domain("nerdculture.de"), domain("maly.io"), domain("corteximplant.com"), domain("queer.party"), domain("fosstodon.org"), domain("meow.social"), domain("indieweb.social"), domain("raru.re"), domain("ani.work"), domain("kolektiva.social"), domain("home.social"), domain("mstdn.plus"), domain("mastodon.sdf.org"), domain("toot.community"), domain("sfba.social"), domain("hachyderm.io") {
+@-moz-document domain("mastodon.coffee"), domain("socel.net"), domain("brands.town"), domain("mstdn.social"), domain("social.vivaldi.net"), domain("masto.ai"), domain("mastodon.art"), domain("tech.lgbt"), domain("mastodon.social"), domain("mastodon.online"), domain("mastodon.lol"), domain("floss.social"), domain("mas.to"), domain("c.im"), domain("nerdculture.de"), domain("maly.io"), domain("corteximplant.com"), domain("queer.party"), domain("fosstodon.org"), domain("meow.social"), domain("indieweb.social"), domain("raru.re"), domain("ani.work"), domain("kolektiva.social"), domain("home.social"), domain("mstdn.plus"), domain("mastodon.sdf.org"), domain("toot.community"), domain("sfba.social"), domain("hachyderm.io"), domain("mindly.social") {
 
 / { // This is mainly so I can easily collapse everything, shouldn't affect compiled code
 	responsiveW1 = 1320px
@@ -395,10 +397,7 @@
 				flex-direction column
 			}
 			.compose-form__upload__warning {
-				// top 50%
 				position relative
-				// inset 0
-				// bottom 0
 				display flex
 				justify-content center
 				background rgba(0,0,0,0.7)
@@ -408,11 +407,8 @@
 					width 100%
 					height 100%
 					font-weight 700
-					// background rgba(255,255,255,0.8)
-					border-radius var(--radius)
 					padding-inline 1em
 					color white
-					box-shadow var(--shadow-low)
 					i {
 						margin-inline-end .2em
 						transform scale(1.2)
@@ -1487,6 +1483,7 @@
 			}
 		}
 		.picture-in-picture {
+			z-index 101
 			.picture-in-picture__header {
 				border-radius var(--radius) var(--radius) 0 0
 			}
