@@ -37,11 +37,13 @@
 - Restyled 'show more' button
 *//* 1.5.4
 - Fixed popup player showing behind some elements
+*//* 1.5.5
+- Fix unclickable x button in reply indicator
 */
 
 /* ==UserStyle==
 @name           Mastodon Modern
-@version        1.5.4
+@version        1.5.5
 @description    Drastically improves the look & feel of Mastodon
 @updateURL      https://codeberg.org/Freeplay/Mastodon-Modern/raw/branch/main/modern.user.css
 @homepageURL    https://codeberg.org/Freeplay/Mastodon-Modern
@@ -366,6 +368,7 @@
 		.compose-form {
 			height 0
 			.reply-indicator {
+				position relative
 				transition min-height .1s
 			}
 			.reply-indicator__display-name {
