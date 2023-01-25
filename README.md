@@ -26,3 +26,15 @@ If you use this style for your own server, please make sure to at least credit m
 Make sure to see the license below for more details:
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. 
+
+<br><br>
+<div align="center">
+<details>
+<summary>🍓</summary>
+Although I'm definitely lower priority than some others...<br>If you support my work and can actually afford to, 
+
+[**you can donate to me here :)**](https://www.buymeacoffee.com/freeplay)
+
+
+</details>
+</div>
